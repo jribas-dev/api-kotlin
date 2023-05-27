@@ -34,12 +34,15 @@
     - <strong>Response: </strong><em>sem retorno</em>
 
 - <h3>Solicitação de Empréstimo (Credit):</h3>
+
   - <strong>Cadastrar:</strong>
     - <strong>Request: </strong><em>creditValue, dayFirstOfInstallment, numberOfInstallments e customerId</em>
     - <strong>Response: </strong><em>String</em>
+
   - <strong>Listar todas as solicitações de emprestimo de um cliente:</strong>
     - <strong>Request: </strong><em>customerId</em>
     - <strong>Response: </strong><em>creditCode, creditValue, numberOfInstallment</em>
+
   - <strong>Visualizar um emprestimo:</strong>
     - <strong>Request: </strong><em>customerId e creditCode</em>
     - <strong>Response: </strong><em>creditCode, creditValue, numberOfInstallment, status, emailCustomer e incomeCustomer</em>
