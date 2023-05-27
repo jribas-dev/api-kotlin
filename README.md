@@ -16,15 +16,19 @@
 ## Descrição do Projeto
 
 - <h3>Cliente (Customer):</h3>
+
   - <strong>Cadastrar:</strong>
     - <strong>Request: </strong><em>firstName, lastName, cpf, income, email, password, zipCode e street</em>
     - <strong>Response: </strong><em>String</em>
+
   - <strong>Editar cadastro:</strong>
     - <strong>Request: </strong><em>id, firstName, lastName, income, zipCode, street</em>
     - <strong>Response: </strong><em>firstName, lastName, income, cpf, email, income, zipCode, street</em>
+
   - <strong>Visualizar perfil:</strong>
     - <strong>Request: </strong> <em>id</em>
     - <strong>Response: </strong><em>firstName, lastName, income, cpf, email, income, zipCode, street</em>
+
   - <strong>Deletar cadastro:</strong>
     - <strong>Request: </strong><em>id</em>
     - <strong>Response: </strong><em>sem retorno</em>
