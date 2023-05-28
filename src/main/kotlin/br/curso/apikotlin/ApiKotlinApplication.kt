@@ -1,4 +1,4 @@
-package br.curso.api
+package br.curso.apikotlin
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class ApiKotlinApplication
 
 fun main(args: Array<String>) {
-    runApplication<ApiKotlinApplication>(*args)
+	runApplication<ApiKotlinApplication>(*args)
 }
