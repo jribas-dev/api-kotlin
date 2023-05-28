@@ -3,7 +3,7 @@
 ##### API REST para um Sistema de Análise de Solicitação de Crédito
 
 ![Java](https://img.shields.io/badge/Java-v17-blue.svg "Java")
-![Kotlin](https://img.shields.io/badge/Kotlin-v1.7.22-purple.svg "Kotlin")
+![Kotlin](https://img.shields.io/badge/Kotlin-v1.8.10-purple.svg "Kotlin")
 ![SpringBoot](https://img.shields.io/badge/Spring%20Boot-v3.1.0-brightgreen.svg "Spring")
 ![Gradle](https://img.shields.io/badge/Gradle-v7.6.1-lightgreen.svg "Gradle")
 ![H2Database](https://img.shields.io/badge/H2-v2.1.214-darkblue.svg "H2 Database")
