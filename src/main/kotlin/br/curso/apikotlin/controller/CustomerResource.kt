@@ -4,7 +4,6 @@ import br.curso.apikotlin.dto.request.CustomerDto
 import br.curso.apikotlin.dto.request.CustomerUpdateDto
 import br.curso.apikotlin.dto.response.CustomerView
 import br.curso.apikotlin.entity.Customer
-import br.curso.apikotlin.exception.BusinessException
 import br.curso.apikotlin.service.impl.CustomerService
 import jakarta.validation.Valid
 import org.springframework.http.HttpStatus
@@ -34,12 +33,8 @@ class CustomerResource(private val customerService: CustomerService) {
 
     @DeleteMapping("/{id}")
     fun deleteCustomer(@PathVariable id: Long): ResponseEntity<Map<String, String>> {
-        return try {
-            this.customerService.delete(id)
-            ResponseEntity.status(HttpStatus.OK).body(mapOf("msg" to "Customer $id has benn deleted"))
-        } catch (e: BusinessException) {
-            ResponseEntity.status(HttpStatus.BAD_REQUEST).body(mapOf("msg" to "Customer with ${e.message}"))
-        }
+        this.customerService.delete(id)
+        return ResponseEntity.status(HttpStatus.OK).body(mapOf("msg" to "Customer $id has benn deleted"))
     }
 
     @PatchMapping
